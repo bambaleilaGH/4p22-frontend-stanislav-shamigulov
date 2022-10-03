@@ -1,0 +1,87 @@
+@font-face {
+    font-family: gwent;
+    src: url(gwent_extrabold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #000;
+}
+
+.menu {
+    padding: 20px 0;
+    text-align: center;
+    background: #02674a;
+    font-family: gwent, Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    max-width: 200px;
+    height: auto;
+    text-align: center;
+    background: #1a1a1a;
+}
+
+.card-image img {
+    max-width: 100%;
+    display: block;
+}
+
+.shirt {
+    margin-top: -150px;
+}
+
+.card-name {
+    padding: 5px 0px;
+    font-family: gwent, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
+
+.card-text {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 40px;
+    color: #959595;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background: #02674a;
+    border-radius: 20px;
+    border: none;
+}
+
+button:hover {
+    background: #2f4442;
+}
+
+button a {
+    font-family: gwent, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    color: #333;
+}
+
+
