@@ -1,0 +1,385 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    height: calc(80 / 1440 * 100vw);
+    margin-left: calc(30 / 1440 * 100vw);
+}
+
+.header__container img {
+    height: calc(50 / 1440 * 100vw);
+}
+
+.header__title {
+    margin-left: calc(30 / 1440 * 100vw);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: calc(36 / 1440 * 100vw);
+    color: #787878;
+}
+
+.header__navbar {
+    position: absolute;
+    right: calc(43 / 1440 * 100vw);
+}
+
+.header__navbar a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: calc(24 / 1440 * 100vw);
+    color: #787878;
+    text-decoration: none;
+    outline: none;
+}
+
+.header__navbar a:nth-child(1) {
+    padding-right: calc(28 / 1440 * 100vw);
+}
+
+.header__navbar a:hover {
+    color: #1A226B;
+}
+
+.nav__active {
+    color: #1A226B !important;
+}
+
+.enter {
+    margin-top: calc(125 / 1440 * 100vw);
+    margin-bottom: calc(129 / 1440 * 100vw);
+}
+
+.enter-reg {
+    margin-top: calc(100 / 1440 * 100vw);
+}
+
+.enter__container {
+    margin: 0 auto;
+    padding: 0 calc(45 / 1440 * 100vw);
+    width: calc(600 / 1440 * 100vw);
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+
+.enter-container__title {
+    text-align: center;
+    padding-top: calc(26 / 1440 * 100vw);
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(50 / 1440 * 100vw);
+    font-weight: 700;
+    color: #787878;
+}
+
+label {
+    padding-left: calc(8 / 1440 * 100vw);
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(16 / 1440 * 100vw);
+    font-weight: 700;
+    color: #787878;
+}
+
+.reglabel {
+    display: block;
+    padding: 0;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: calc(49 / 1440 * 100vw);
+    border: 2px solid #787878;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: calc(28 / 1440 * 100vw);
+    color: #787878;
+    margin-top: calc(3 / 1440 * 100vw);
+    padding-left: calc(15 / 1440 * 100vw);
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+.enter-container__email {
+    margin-top: calc(17 / 1440 * 100vw);
+}
+
+.enter-container__pass {
+    margin-top: calc(11 / 1440 * 100vw);
+}
+
+.enter-container__confirm {
+    margin-top: calc(11 / 1440 * 100vw);
+}
+
+.enter-container__gender {
+    margin-top: calc(11 / 1440 * 100vw);
+}
+
+.enter-container-gender__box {
+    margin-top: calc(5 / 1440 * 100vw);
+}
+
+.enter-container__gender div:nth-child(3) {
+    margin-top: calc(9 / 1440 * 100vw);
+}
+
+.enter-container-gender__box input {
+    display: none;
+}
+
+.enter-container-gender__box label {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    padding-left: calc(29 / 1440 * 100vw);
+    line-height: calc(25 / 1440 * 100vw);
+}
+
+.enter-container-gender__box label::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: calc(20 / 1440 * 100vw);
+    width: calc(20 / 1440 * 100vw);
+    left: 0;
+    border: 2px solid #787878;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+.enter-container-gender__box input:checked + label::before {
+    background: #787878;
+}
+
+.enter-container__about {
+    margin-top: calc(11 / 1440 * 100vw);
+}
+
+.enter-container-about__textarea {
+    outline: none;
+    resize: none;
+    height: calc(246 / 1440 * 100vw);
+    width: 100%;
+    border: 2px solid #787878;
+    padding: calc(7 / 1440 * 100vw) calc(15 / 1440 * 100vw);
+    margin-top: calc(5 / 1440 * 100vw);
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(28 / 1440 * 100vw);
+    font-weight: 700;
+    color: #787878;
+}
+
+.enter-container-about__textarea::placeholder {
+    color: #ccc;
+}
+
+.enter-container__agree {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: calc(24 / 1440 * 100vw);
+}
+
+.enter-container__agree input {
+    position: absolute;
+    display: block;
+    opacity: 0;
+}
+
+.enter-container-agree__custom {
+    display: inline-block;
+    height: calc(24 / 1440 * 100vw);
+    width: calc(24 / 1440 * 100vw);
+    border: 2px solid #787878;
+    box-shadow: inset 0px 0px 0px calc(4 / 1440 * 100vw) #fff;
+}
+
+.enter-container__agree label {
+    font-weight: 400;
+}
+
+.enter-container__agree input:checked + .enter-container-agree__custom  {
+    background: #787878;
+}
+
+.enter-container__button {
+    margin-top: calc(52 / 1440 * 100vw);
+    padding-bottom: calc(37 / 1440 * 100vw);
+    text-align: center;
+}
+
+.enter-container__button button {
+    width: calc(180 / 1440 * 100vw);
+    height: calc(52 / 1440 * 100vw);
+    border: none;
+    background: #1A226B;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: calc(24 / 1440 *100vw);
+    color: #fff;
+}
+
+.enter-container-button__reg {
+    margin-top: calc(56 / 1440 * 100vw);
+}
+
+@media screen and (max-width: 768px) {
+    .header__container {
+        height: calc(80 / 768 * 100vw);
+        margin-left: calc(30 / 768 * 100vw);
+    }
+
+    .header__container img {
+        height: calc(25 / 768 * 100vw);
+    }
+
+    .header__title {
+        margin-left: calc(34 / 768 * 100vw);
+        font-size: calc(24 / 768 * 100vw);
+    }
+
+    .header__navbar {
+        right: calc(28 / 768 * 100vw);
+    }
+
+    .header__navbar a {
+        font-size: calc(16 / 768 * 100vw);
+    }
+
+    .header__navbar a:nth-child(1) {
+        padding-right: calc(36 / 768 * 100vw);
+    }
+
+    .enter {
+        margin-top: calc(80 / 768 * 100vw);
+        margin-bottom: calc(129 / 768 * 100vw);
+    }
+
+    .enter__container {
+        width: calc(600 / 768 * 100vw);
+        padding: 0 calc(45 / 768 * 100vw);
+    }
+
+    .enter-container__title {
+        font-size: calc(50 / 768 *100vw);
+    }
+
+    label {
+        font-size: calc(16 / 768 * 100vw);
+        padding-left: calc(8 / 768 * 100vw);
+    }
+
+    input {
+        height: calc(49 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+        margin-top: calc(3 / 768 * 100vw);
+    }
+
+    .enter-container__email {
+        margin-top: calc(17 / 768 * 100vw);
+    }
+    
+    .enter-container__pass {
+        margin-top: calc(11 / 768 * 100vw);
+    }
+    
+    .enter-container__confirm {
+        margin-top: calc(11 / 768 * 100vw);
+    }
+
+    .enter-container__gender {
+        margin-top: calc(11 / 768 * 100vw);
+    }
+
+    .enter-container-gender__box {
+        margin-top: calc(5 / 768 * 100vw);
+    }
+    
+    .enter-container__gender div:nth-child(3) {
+        margin-top: calc(9 / 768 * 100vw);
+    }
+
+    .enter-container-gender__box label {
+        padding-left: calc(29 / 768 * 100vw);
+        line-height: calc(25 / 768 * 100vw);
+    }
+    
+    .enter-container-gender__box label::before {
+        height: calc(20 / 768 * 100vw);
+        width: calc(20 / 768 * 100vw);
+    }
+
+    .enter-container__about {
+        margin-top: calc(11 / 768 * 100vw);
+    }
+    
+    .enter-container-about__textarea {
+        outline: none;
+        resize: none;
+        height: calc(246 / 768 * 100vw);
+        width: 100%;
+        border: 2px solid #787878;
+        padding: calc(7 / 768 * 100vw) calc(15 / 768 * 100vw);
+        margin-top: calc(5 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-size: calc(28 / 768 * 100vw);
+        font-weight: 700;
+        color: #787878;
+    }
+    
+    .enter-container__agree {
+        margin-top: calc(24 / 768 * 100vw);
+    }
+    
+    .enter-container-agree__custom {
+        display: inline-block;
+        height: calc(24 / 768 * 100vw);
+        width: calc(24 / 768 * 100vw);
+        border: 2px solid #787878;
+        box-shadow: inset 0px 0px 0px calc(4 / 768 * 100vw) #fff;
+    }
+    
+    .enter-container__agree label {
+        font-weight: 400;
+    }
+    
+    .enter-container__agree input:checked + .enter-container-agree__custom  {
+        background: #787878;
+    }
+
+    .enter-container__button {
+        margin-top: calc(52 / 768 * 100vw);
+        padding-bottom: calc(37 / 768 * 100vw);
+    }
+
+    .enter-container-button__reg {
+        margin-top: calc(56 / 768 * 100vw);
+    }
+
+    .enter-container__button button {
+        width: calc(180 / 768 * 100vw);
+        height: calc(52 / 768 * 100vw);
+        font-size: calc(24 / 768 *100vw);
+    }
+}
+
+
+
+
+
+
+
